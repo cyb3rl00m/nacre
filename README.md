@@ -61,7 +61,7 @@ Linux has an excellent open-source antivirus engine in ClamAV, but it lives in t
 2. Install it — apt pulls in ClamAV and everything else automatically:
 
 ```bash
-sudo apt install ./nacre_*_all.deb
+sudo apt install ./nacre_1.0.1_all.deb
 ```
 
 3. Open **Nacre** from your app menu. If virus definitions haven't been downloaded yet, click **Download Definitions**.
