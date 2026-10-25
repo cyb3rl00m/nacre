@@ -9,7 +9,20 @@
   Built with GTK 4 and libadwaita for Pop!_OS, Ubuntu, Debian and their derivatives.
 </p>
 
+[![Release v1.0.1](https://img.shields.io/badge/release-v1.1.1-26a269)](https://github.com/cyb3rl00m/nacre/releases/latest)
+[![Made with Claude](https://img.shields.io/badge/made%20with-Claude-d97757)](#credits)
+[![License: MIT](https://img.shields.io/badge/license-MIT-3584e4)](LICENSE)
+![GTK 4 + libadwaita](https://img.shields.io/badge/GTK%204-libadwaita-4a86cf?logo=gnome&logoColor=white)
+
 ---
+
+<br>
+
+<img src="nacre.png" width="860" alt="Nacre UI picture">
+
+</div>
+
+<br>
 
 ## Features
 
