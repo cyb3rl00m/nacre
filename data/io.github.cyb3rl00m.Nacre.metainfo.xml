@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.cyb3rl00m.Nacre</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>MIT</project_license>
+  <name>Nacre</name>
+  <summary>Modern antivirus for Linux, powered by ClamAV</summary>
+  <description>
+    <p>Nacre is a friendly GTK4 front end for the ClamAV antivirus engine.</p>
+    <ul>
+      <li>Quick, full system and custom scans with live progress</li>
+      <li>One-click virus definition updates</li>
+      <li>Quarantine, restore or permanently delete threats</li>
+      <li>A 30-day activity log of every scan and action</li>
+    </ul>
+  </description>
+  <launchable type="desktop-id">io.github.cyb3rl00m.Nacre.desktop</launchable>
+  <url type="homepage">https://github.com/cyb3rl00m/nacre</url>
+  <url type="bugtracker">https://github.com/cyb3rl00m/nacre/issues</url>
+  <developer id="io.github.cyb3rl00m">
+    <name>cyb3rl00m</name>
+  </developer>
+  <content_rating type="oars-1.1"/>
+  <releases>
+    <release version="1.0.1" date="2026-10-25">
+      <description>
+        <p>New name: Nacre. New option to shut the computer down automatically when a full scan is done.</p>
+      </description>
+    </release>
+    <release version="1.0.0" date="2026-10-25"/>
+  </releases>
+</component>

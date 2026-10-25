@@ -1,0 +1,74 @@
+/* Nacre - extra styling on top of libadwaita. Uses the theme's named colors so
+   light/dark mode and accent colors just work. */
+
+/* big round status badge */
+.hero-badge {
+  min-width: 132px;
+  min-height: 132px;
+  border-radius: 9999px;
+  background-color: alpha(@accent_bg_color, 0.14);
+  color: @accent_color;
+  transition: background-color 300ms ease, color 300ms ease;
+}
+.hero-badge.ok      { background-color: alpha(@success_color, 0.16); color: @success_color; }
+.hero-badge.warning { background-color: alpha(@warning_color, 0.18); color: @warning_color; }
+.hero-badge.error   { background-color: alpha(@error_color, 0.16);   color: @error_color; }
+.hero-badge.neutral { background-color: alpha(@accent_bg_color, 0.14); color: @accent_color; }
+.hero-badge.busy {
+  background-color: alpha(@accent_bg_color, 0.18);
+  color: @accent_color;
+  animation: nacre-pulse 1.6s ease-in-out infinite alternate;
+}
+
+@keyframes nacre-pulse {
+  from { box-shadow: 0 0 0 0 alpha(@accent_bg_color, 0.35); }
+  to   { box-shadow: 0 0 0 18px alpha(@accent_bg_color, 0.0); }
+}
+
+.hero-subtitle { font-size: 1.05em; }
+
+/* scan type cards */
+.scan-card { padding: 0; }
+.scan-card .card-icon {
+  padding: 12px;
+  border-radius: 14px;
+  background-color: alpha(@accent_bg_color, 0.14);
+  color: @accent_color;
+}
+.scan-card.accent-card .card-icon {
+  background-color: @accent_bg_color;
+  color: @accent_fg_color;
+}
+.scan-card .card-meta { color: @accent_color; font-weight: 600; }
+
+/* stats */
+.stats-row .stat {
+  padding: 14px 8px;
+  border-radius: 12px;
+  background-color: alpha(currentColor, 0.05);
+}
+.stat-value { font-size: 1.7em; font-weight: 800; }
+.stats-row .stat.error .stat-value { color: @error_color; }
+
+.scan-progress trough, .scan-progress progress { min-height: 8px; border-radius: 9999px; }
+
+/* state colors for small icons/labels */
+.ok      { color: @success_color; }
+.warning { color: @warning_color; }
+.error   { color: @error_color; }
+
+.nav-count {
+  padding: 0 7px;
+  border-radius: 9999px;
+  background-color: alpha(currentColor, 0.1);
+  font-size: 0.85em;
+  font-weight: 700;
+}
+
+.drop-hover {
+  background-color: alpha(@accent_bg_color, 0.08);
+  box-shadow: inset 0 0 0 2px alpha(@accent_bg_color, 0.6);
+  border-radius: 12px;
+}
+
+.update-output { background-color: transparent; font-size: 0.9em; }

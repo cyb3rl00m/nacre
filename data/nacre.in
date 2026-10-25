@@ -1,0 +1,9 @@
+#!/usr/bin/python3
+# Nacre launcher (installed to /usr/bin/nacre)
+import sys
+
+sys.path.insert(0, "@PKGDIR@")
+
+from nacre.main import main  # noqa: E402
+
+sys.exit(main(sys.argv))

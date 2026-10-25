@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE policyconfig PUBLIC
+ "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN"
+ "http://www.freedesktop.org/standards/PolicyKit/1/policyconfig.dtd">
+<policyconfig>
+  <vendor>Nacre</vendor>
+  <vendor_url>https://github.com/cyb3rl00m/nacre</vendor_url>
+  <icon_name>io.github.cyb3rl00m.Nacre</icon_name>
+
+  <action id="io.github.cyb3rl00m.Nacre.helper">
+    <description>Run Nacre antivirus tasks</description>
+    <message>Nacre needs your password to scan protected files, update virus definitions or manage the quarantine</message>
+    <defaults>
+      <allow_any>auth_admin</allow_any>
+      <allow_inactive>auth_admin</allow_inactive>
+      <!-- keep: you are not asked again for a few minutes (e.g. quarantining several files) -->
+      <allow_active>auth_admin_keep</allow_active>
+    </defaults>
+    <annotate key="org.freedesktop.policykit.exec.path">/usr/libexec/nacre/nacre-helper</annotate>
+  </action>
+</policyconfig>

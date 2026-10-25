@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Nacre
+GenericName=Antivirus Scanner
+Comment=Scan your computer for viruses and malware with ClamAV
+Exec=nacre %F
+Icon=io.github.cyb3rl00m.Nacre
+Terminal=false
+StartupNotify=true
+Categories=System;Security;Utility;GTK;
+Keywords=antivirus;virus;malware;clamav;scan;security;quarantine;threat;
